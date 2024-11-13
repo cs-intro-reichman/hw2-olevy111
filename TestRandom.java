@@ -2,8 +2,8 @@
 public  class  TestRandom {
 	public static void main(String[]  args) {
 	    int N = Integer.parseInt(args[0]);
-		double big = 0;
-		double small = 0;
+		int big = 0;
+		int small = 0;
 		for (int i=0 ; i<N ; i++)
 		{
 			double num = Math.random();
@@ -16,9 +16,9 @@ public  class  TestRandom {
 				big = big +1;
 			}
 		}
-		double max = (double)(Math.max(big, small));
-		double min = (double)(Math.min(big, small));
-		double ratio = min/max;
+		int max = (Math.max(big, small));
+		int min = (Math.min(big, small));
+		double ratio = (double)min/max;
 
 		System.out.println("> 0.5: "+(int) big + " times");
 		System.out.println("<= 0.5: "+ (int) small + " times");
