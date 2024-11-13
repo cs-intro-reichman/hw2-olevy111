@@ -11,22 +11,22 @@ public class TimeCalc {
         {
            if(NewHours<10)
            {
-            System.out.println("the answer is: 0" + NewHours + ":0" + NewMinutes);
+            System.out.println("0" + NewHours + ":0" + NewMinutes);
            }
            else
            {
-            System.out.println("the answer is: " + NewHours + ":0" + NewMinutes);
+            System.out.println("" + NewHours + ":0" + NewMinutes);
            }
         }
         else
         {
             if(NewHours<10)
             {
-                System.out.println("the answer is: 0" + NewHours + ":" + NewMinutes);
+                System.out.println("0" + NewHours + ":" + NewMinutes);
             }
             else
             {
-                System.out.println("the answer is: " + NewHours + ":" + NewMinutes);
+                System.out.println("" + NewHours + ":" + NewMinutes);
             }
         }
     }
